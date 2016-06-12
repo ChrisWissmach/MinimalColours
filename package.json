@@ -1,0 +1,36 @@
+{
+    "author": "chriswissmach@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "minimal-colours",
+    "pebble": {
+        "capabilities": [
+            ""
+        ],
+        "displayName": "Minimal Colours",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "characterRegex": "[0-9:]",
+                    "file": "fonts/roboto-thin",
+                    "name": "FONT_ROBOTO_THIN_50",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt"
+        ],
+        "uuid": "7885b1d4-f78d-4fab-aba3-b9c2e4ef4270",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
