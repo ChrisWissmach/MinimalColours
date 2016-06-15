@@ -12,18 +12,17 @@ static int s_battery_level;
 GColor current;
 
 
-
-
 static void update_background_colour(){
   int x = rand() % 7;
   current = colours[x];
   
-  if (x == 2){
+  if (x == 2 || x == 3){
     isYellow = true;
     text_layer_set_text_color(s_time_layer, GColorBlack);
   }
   else{
     isYellow = false;
+    text_layer_set_text_color(s_time_layer, GColorWhite);
   }
   
   window_set_background_color(s_main_window, current);
@@ -73,9 +72,9 @@ static void main_window_load(Window *window){
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
   
-  s_time_layer = text_layer_create( GRect(0, PBL_IF_ROUND_ELSE(58, 52), bounds.size.w, 100));
+  s_time_layer = text_layer_create( GRect(0, PBL_IF_ROUND_ELSE(58, 52), bounds.size.w, 150));
   
-  s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_THIN_50));
+  s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_LIGHT_54));
   
   s_battery_layer = layer_create(GRect(0, 0, 144,3));
   layer_set_update_proc(s_battery_layer, battery_update_proc);

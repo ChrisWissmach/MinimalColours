@@ -15,8 +15,15 @@
             "media": [
                 {
                     "characterRegex": "[0-9:]",
+                    "file": "fonts/roboto-light",
+                    "name": "FONT_ROBOTO_LIGHT_54",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9:]",
                     "file": "fonts/roboto-thin",
-                    "name": "FONT_ROBOTO_THIN_50",
+                    "name": "FONT_ROBOTO_THIN_54",
                     "targetPlatforms": null,
                     "type": "font"
                 }
